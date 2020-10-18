@@ -1,0 +1,107 @@
+.header {
+  background-image: url("../images/bg1.png");
+  padding: 2.3rem 10rem 10rem 10rem;
+  height: auto;
+
+  @media #{$max1199} {
+    padding: 2.2rem 5rem 10rem 5rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 30px;
+
+    @media #{$max991} {
+      flex-direction: column;
+    }
+
+    &__logo {
+      width: 160px;
+      @media #{$max991} {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      @media #{$max991} {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &__list-el {
+      padding-left: 3.2rem;
+      @media #{$max991} {
+        text-align: center;
+        padding-left: 20px;
+
+        &:nth-of-type(6) {
+          padding-right: 20px;
+        }
+      }
+
+      &--icon {
+        padding-left: 5px;
+      }
+    }
+
+    &__link {
+      font-size: 1.31rem;
+      line-height: 33px;
+      color: $white;
+      // padding-bottom: 5px;
+
+      &:hover {
+        color: $main-color;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        transition: all .3s;
+      }
+
+     
+    }
+  }
+
+  &__title {
+    font-size: 5.45rem;
+    color: $white;
+    text-align: center;
+    padding-top: 8rem;
+    max-width: 960px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+
+  &__divider {
+    width: 16rem;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  &__button-container {
+    text-align: center;
+  }
+
+  &__button {
+    color: $white;
+    font-size: 1.2rem;
+    border: none;
+    width: 14rem;
+    height: 3.8rem;
+    margin: 10px;
+    cursor: pointer;
+
+    &--dark {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    &--light {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

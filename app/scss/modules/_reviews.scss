@@ -1,0 +1,26 @@
+.reviews {
+    background-image: url("../images/bg5.png");
+    display: flex;
+    justify-content: center;
+
+    &__text-container {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 570px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 4rem 3.5rem;
+    }
+
+    &__text {
+        font-family: $additional-font;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2.2rem;
+        padding-bottom: 2rem;
+
+    }
+}
